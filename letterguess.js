@@ -52,7 +52,7 @@ $('#letter-buttons button').on('click',function(){
    if(!wefoundOne){
    	remainingGuesses--;
    	// let user know how many guesses they have left
-   	alert("remaini guesses:"+ remainingGuesses);
+   	alert("remaining guesses:"+ remainingGuesses);
    }
 	
 });
