@@ -1,6 +1,16 @@
 #blanks span{
-	padding: 20px;
+	padding: 30px;
+	margin-top: 30px;
+	font-size: 30px;
 
+}
+
+#blanks{
+	padding-top: 100px;
+}
+#instructions{
+	display: block;
+	font-size: 30px;
 }
 /*created a button like we do with classes in css*/
 #letter-buttons button{

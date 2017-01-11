@@ -5,11 +5,11 @@ for(var k=0;k<26;k++){
 	$('#letter-buttons').append('<button>'+letter+'</button');
 }
 
-var wordList=["apple", "banana", "grape", "watermelon", "peache"];
+var wordList=["apple", "banana", "grape", "watermelon", "peach"];
 //this is how to get a random word in javascript with math function
 // mutiplied with the wordList.length to drop the decimal
  var word=wordList[Math.floor(Math.random()*wordList.length)];
-alert(word);
+// alert(word);
 // treat the string word as a array
 for( var i=0; i<word.length; i++){
 	//for each letter add _ , underscore
@@ -29,7 +29,7 @@ $('#letter-buttons button').on('click',function(){
   	var wefoundOne=false;
     //didnt find a letter yet
 	var showLetter=$(this).html();
-	alert(showLetter);
+	// alert(showLetter);
 	//look at each letter one at a time, use another four loop!
 	for(var j=0; j<word.length; j++){
 		if(word[j].toLowerCase()===showLetter.toLowerCase())
@@ -52,7 +52,7 @@ $('#letter-buttons button').on('click',function(){
    if(!wefoundOne){
    	remainingGuesses--;
    	// let user know how many guesses they have left
-   	alert("remaining guesses:"+ remainingGuesses);
+   	alert("Wrong! Remaining guesses:"+ remainingGuesses);
    }
 	
 });
